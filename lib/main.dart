@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'dart:ui';
 //theme data
 import 'package:unemi/utils/const.dart';
+//landing screen
+import 'package:unemi/screens/landingScreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,10 +16,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     double screenWidth = window.physicalSize.width;
     return MaterialApp(
-      home: Scaffold(),
+      home: LandingScreenBak(),
       title: 'UNEMI',
       theme: ThemeData(
-        canvasColor: COLOR_SECONDARY,
+        canvasColor: COLOR_PRIMARY,
         textTheme: screenWidth < 500 ? ACUA_S : ACUA_M,
       ),
     );
