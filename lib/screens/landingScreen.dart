@@ -1,3 +1,4 @@
+import 'dart:typed_data';
 import 'dart:ui';
 import 'package:unemi/customs/DropDown.dart';
 import 'package:flutter/material.dart';
@@ -6,14 +7,16 @@ import 'package:unemi/customs/Buttons.dart';
 import 'package:unemi/utils/const.dart';
 import 'package:unemi/utils/widgetFunc.dart';
 import 'package:flutter_bounceable/flutter_bounceable.dart';
+import 'package:edge_detection/edge_detection.dart';
 
-class LandingScreenBak  extends StatelessWidget {
-  const LandingScreenBak ({super.key});
+class LandingScreen  extends StatelessWidget {
+  const LandingScreen ({super.key});
 
   @override
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
     const double padding = 25;
+
     return SafeArea(
         child: Scaffold(
           drawer: NavDrawer(),
@@ -38,7 +41,9 @@ class LandingScreenBak  extends StatelessWidget {
                   ),
                   Spacer(flex: 1,),
                   Bounceable(
-                    onTap: (){ 
+                    onTap: () async { 
+                      String? imagePath = await EdgeDetection.detectEdge;
+                      print(imagePath);
                     }, 
                     child: Stack(
                       alignment: AlignmentDirectional.center,

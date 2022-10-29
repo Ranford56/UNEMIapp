@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     double screenWidth = window.physicalSize.width;
     return MaterialApp(
-      home: LandingScreenBak(),
+      home: const LandingScreen(),
       title: 'UNEMI',
       theme: ThemeData(
         canvasColor: COLOR_PRIMARY,
