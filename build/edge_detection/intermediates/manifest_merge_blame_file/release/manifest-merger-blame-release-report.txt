@@ -1,0 +1,50 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.sample.edgedetection" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="21"
+6-->D:\tools\flutter\.pub-cache\hosted\pub.dartlang.org\edge_detection-1.0.9\android\src\main\AndroidManifest.xml
+7        android:targetSdkVersion="31" />
+7-->D:\tools\flutter\.pub-cache\hosted\pub.dartlang.org\edge_detection-1.0.9\android\src\main\AndroidManifest.xml
+8
+9    <uses-permission android:name="android.permission.CAMERA" />
+9-->D:\tools\flutter\.pub-cache\hosted\pub.dartlang.org\edge_detection-1.0.9\android\src\main\AndroidManifest.xml:4:5-65
+9-->D:\tools\flutter\.pub-cache\hosted\pub.dartlang.org\edge_detection-1.0.9\android\src\main\AndroidManifest.xml:4:22-62
+10    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+10-->D:\tools\flutter\.pub-cache\hosted\pub.dartlang.org\edge_detection-1.0.9\android\src\main\AndroidManifest.xml:5:5-81
+10-->D:\tools\flutter\.pub-cache\hosted\pub.dartlang.org\edge_detection-1.0.9\android\src\main\AndroidManifest.xml:5:22-78
+11
+12    <application
+12-->D:\tools\flutter\.pub-cache\hosted\pub.dartlang.org\edge_detection-1.0.9\android\src\main\AndroidManifest.xml:7:5-22:19
+13        android:allowBackup="true"
+13-->D:\tools\flutter\.pub-cache\hosted\pub.dartlang.org\edge_detection-1.0.9\android\src\main\AndroidManifest.xml:8:9-35
+14        android:requestLegacyExternalStorage="true"
+14-->D:\tools\flutter\.pub-cache\hosted\pub.dartlang.org\edge_detection-1.0.9\android\src\main\AndroidManifest.xml:9:9-52
+15        android:supportsRtl="true"
+15-->D:\tools\flutter\.pub-cache\hosted\pub.dartlang.org\edge_detection-1.0.9\android\src\main\AndroidManifest.xml:10:9-35
+16        android:theme="@style/AppTheme" >
+16-->D:\tools\flutter\.pub-cache\hosted\pub.dartlang.org\edge_detection-1.0.9\android\src\main\AndroidManifest.xml:11:9-40
+17        <activity
+17-->D:\tools\flutter\.pub-cache\hosted\pub.dartlang.org\edge_detection-1.0.9\android\src\main\AndroidManifest.xml:12:9-16:52
+18            android:name="com.sample.edgedetection.scan.ScanActivity"
+18-->D:\tools\flutter\.pub-cache\hosted\pub.dartlang.org\edge_detection-1.0.9\android\src\main\AndroidManifest.xml:13:13-46
+19            android:label="@string/scan"
+19-->D:\tools\flutter\.pub-cache\hosted\pub.dartlang.org\edge_detection-1.0.9\android\src\main\AndroidManifest.xml:14:13-41
+20            android:launchMode="singleTask"
+20-->D:\tools\flutter\.pub-cache\hosted\pub.dartlang.org\edge_detection-1.0.9\android\src\main\AndroidManifest.xml:15:13-44
+21            android:screenOrientation="portrait" />
+21-->D:\tools\flutter\.pub-cache\hosted\pub.dartlang.org\edge_detection-1.0.9\android\src\main\AndroidManifest.xml:16:13-49
+22        <activity
+22-->D:\tools\flutter\.pub-cache\hosted\pub.dartlang.org\edge_detection-1.0.9\android\src\main\AndroidManifest.xml:17:9-21:52
+23            android:name="com.sample.edgedetection.crop.CropActivity"
+23-->D:\tools\flutter\.pub-cache\hosted\pub.dartlang.org\edge_detection-1.0.9\android\src\main\AndroidManifest.xml:18:13-46
+24            android:label="@string/crop"
+24-->D:\tools\flutter\.pub-cache\hosted\pub.dartlang.org\edge_detection-1.0.9\android\src\main\AndroidManifest.xml:19:13-41
+25            android:launchMode="singleTask"
+25-->D:\tools\flutter\.pub-cache\hosted\pub.dartlang.org\edge_detection-1.0.9\android\src\main\AndroidManifest.xml:20:13-44
+26            android:screenOrientation="portrait" />
+26-->D:\tools\flutter\.pub-cache\hosted\pub.dartlang.org\edge_detection-1.0.9\android\src\main\AndroidManifest.xml:21:13-49
+27    </application>
+28
+29</manifest>

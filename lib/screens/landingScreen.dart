@@ -1,5 +1,8 @@
+import 'dart:io';
 import 'dart:typed_data';
 import 'dart:ui';
+import 'dart:convert';
+
 import 'package:unemi/customs/DropDown.dart';
 import 'package:flutter/material.dart';
 import 'package:unemi/customs/NavDrawer.dart';
@@ -8,6 +11,7 @@ import 'package:unemi/utils/const.dart';
 import 'package:unemi/utils/widgetFunc.dart';
 import 'package:flutter_bounceable/flutter_bounceable.dart';
 import 'package:edge_detection/edge_detection.dart';
+import 'package:http/http.dart' as http;
 
 class LandingScreen  extends StatelessWidget {
   const LandingScreen ({super.key});
@@ -16,6 +20,44 @@ class LandingScreen  extends StatelessWidget {
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
     const double padding = 25;
+    File? imagen;
+
+    uploadImage() async {
+      final request = http.MultipartRequest("POST", Uri.parse('https://4dfa-190-155-144-101.ngrok.io/api'));
+      final headers = {"Content-type": "multipart/form-data"};
+      //se añade la imagen al POST
+      var imgname = imagen!.path.split('/').last;
+      request.files.add(http.MultipartFile(
+          'Imagen', imagen!.readAsBytes().asStream(), imagen!.lengthSync(),
+          filename: imgname));
+
+      //se añade parametros al POST
+      request.fields['Preguntas'] = '10';
+      request.fields['Elecciones'] = '4';
+      request.fields['Respuestas'] = '0';
+      //se añade los headers
+      request.headers.addAll(headers);
+
+      //envia la peticion
+      final response = await request.send();
+      
+      //respuesta
+      http.Response res = await http.Response.fromStream(response);
+
+      //si hay error en el print de la respuesta, entonces imprime error
+      try {
+        final resJson = jsonDecode(res.body);
+        var message = resJson['message'];
+      } on Exception catch (_) {
+        const snackBar = SnackBar(
+          content: Text('Error al subir'),
+        );
+
+        // Find the ScaffoldMessenger in the widget tree
+        // and use it to show a SnackBar.
+        ScaffoldMessenger.of(context).showSnackBar(snackBar);
+      }
+    }
 
     return SafeArea(
         child: Scaffold(
@@ -44,6 +86,8 @@ class LandingScreen  extends StatelessWidget {
                     onTap: () async { 
                       String? imagePath = await EdgeDetection.detectEdge;
                       print(imagePath);
+                      imagen = File(imagePath!);
+                      uploadImage();
                     }, 
                     child: Stack(
                       alignment: AlignmentDirectional.center,

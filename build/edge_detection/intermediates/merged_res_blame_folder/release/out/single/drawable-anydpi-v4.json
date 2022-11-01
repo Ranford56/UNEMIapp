@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "D:\\UNEMIapp\\unemi\\build\\edge_detection\\intermediates\\merged_res\\release\\drawable-anydpi-v4\\ic_done.xml",
+        "source": "D:\\tools\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\edge_detection-1.0.9\\android\\src\\main\\res\\drawable-anydpi\\ic_done.xml"
+    },
+    {
+        "merged": "D:\\UNEMIapp\\unemi\\build\\edge_detection\\intermediates\\merged_res\\release\\drawable-anydpi-v4\\ic_invert_colors.xml",
+        "source": "D:\\tools\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\edge_detection-1.0.9\\android\\src\\main\\res\\drawable-anydpi\\ic_invert_colors.xml"
+    },
+    {
+        "merged": "D:\\UNEMIapp\\unemi\\build\\edge_detection\\intermediates\\merged_res\\release\\drawable-anydpi-v4\\ic_camera_white.xml",
+        "source": "D:\\tools\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\edge_detection-1.0.9\\android\\src\\main\\res\\drawable-anydpi\\ic_camera_white.xml"
+    },
+    {
+        "merged": "D:\\UNEMIapp\\unemi\\build\\edge_detection\\intermediates\\merged_res\\release\\drawable-anydpi-v4\\ic_rotate.xml",
+        "source": "D:\\tools\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\edge_detection-1.0.9\\android\\src\\main\\res\\drawable-anydpi\\ic_rotate.xml"
+    },
+    {
+        "merged": "D:\\UNEMIapp\\unemi\\build\\edge_detection\\intermediates\\merged_res\\release\\drawable-anydpi-v4\\ic_crop.xml",
+        "source": "D:\\tools\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\edge_detection-1.0.9\\android\\src\\main\\res\\drawable-anydpi\\ic_crop.xml"
+    },
+    {
+        "merged": "D:\\UNEMIapp\\unemi\\build\\edge_detection\\intermediates\\merged_res\\release\\drawable-anydpi-v4\\ic_reset_colors.xml",
+        "source": "D:\\tools\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\edge_detection-1.0.9\\android\\src\\main\\res\\drawable-anydpi\\ic_reset_colors.xml"
+    }
+]

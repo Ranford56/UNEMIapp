@@ -66,6 +66,14 @@ html
 2.12
 file:///D:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/html-0.15.1/
 file:///D:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/html-0.15.1/lib/
+http
+2.14
+file:///D:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.13.5/
+file:///D:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.13.5/lib/
+http_parser
+2.12
+file:///D:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/http_parser-4.0.2/
+file:///D:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/http_parser-4.0.2/lib/
 image
 2.15
 file:///D:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/image-3.2.2/
