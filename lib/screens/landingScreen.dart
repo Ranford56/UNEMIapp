@@ -23,7 +23,7 @@ class LandingScreen  extends StatelessWidget {
     File? imagen;
 
     uploadImage() async {
-      final request = http.MultipartRequest("POST", Uri.parse('https://4dfa-190-155-144-101.ngrok.io/api'));
+      final request = http.MultipartRequest("POST", Uri.parse('https://djangoocr-production.up.railway.app/api'));
       final headers = {"Content-type": "multipart/form-data"};
       //se añade la imagen al POST
       var imgname = imagen!.path.split('/').last;
@@ -32,9 +32,9 @@ class LandingScreen  extends StatelessWidget {
           filename: imgname));
 
       //se añade parametros al POST
-      request.fields['Preguntas'] = '10';
+      request.fields['Preguntas'] = '20';
       request.fields['Elecciones'] = '4';
-      request.fields['Respuestas'] = '0';
+      request.fields['Respuestas'] = '';
       //se añade los headers
       request.headers.addAll(headers);
 
@@ -47,7 +47,7 @@ class LandingScreen  extends StatelessWidget {
       //si hay error en el print de la respuesta, entonces imprime error
       try {
         final resJson = jsonDecode(res.body);
-        var message = resJson['message'];
+        print(resJson);
       } on Exception catch (_) {
         const snackBar = SnackBar(
           content: Text('Error al subir'),
@@ -85,7 +85,6 @@ class LandingScreen  extends StatelessWidget {
                   Bounceable(
                     onTap: () async { 
                       String? imagePath = await EdgeDetection.detectEdge;
-                      print(imagePath);
                       imagen = File(imagePath!);
                       uploadImage();
                     }, 

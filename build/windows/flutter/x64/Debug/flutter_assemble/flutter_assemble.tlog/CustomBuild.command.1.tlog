@@ -1,0 +1,28 @@
+^D:\UNEMIAPP\UNEMI\BUILD\WINDOWS\CMAKEFILES\E37BDCC5473B297B11EEA07E7A1A3BE2\FLUTTER_WINDOWS.DLL.RULE
+setlocal
+D:\vs\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E env FLUTTER_ROOT=D:\tools\flutter PROJECT_DIR=D:\UNEMIapp\unemi FLUTTER_ROOT=D:\tools\flutter FLUTTER_EPHEMERAL_DIR=D:\UNEMIapp\unemi\windows\flutter\ephemeral PROJECT_DIR=D:\UNEMIapp\unemi FLUTTER_TARGET=D:\UNEMIapp\unemi\lib\main.dart DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ== DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=D:\UNEMIapp\unemi\.dart_tool\package_config.json D:/tools/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\UNEMIAPP\UNEMI\BUILD\WINDOWS\CMAKEFILES\DC32C1687F5B52EAABD5AF60689EF093\FLUTTER_ASSEMBLE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\UNEMIAPP\UNEMI\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+D:\vs\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -SD:/UNEMIapp/unemi/windows -BD:/UNEMIapp/unemi/build/windows --check-stamp-file D:/UNEMIapp/unemi/build/windows/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
