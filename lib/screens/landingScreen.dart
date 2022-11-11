@@ -48,6 +48,12 @@ class LandingScreen  extends StatelessWidget {
       try {
         final resJson = jsonDecode(res.body);
         print(resJson);
+        const snackBar = SnackBar(
+          content: Text('Se subio el archivo'),
+        );
+
+        ScaffoldMessenger.of(context).showSnackBar(snackBar);
+
       } on Exception catch (_) {
         const snackBar = SnackBar(
           content: Text('Error al subir'),
@@ -57,6 +63,7 @@ class LandingScreen  extends StatelessWidget {
         // and use it to show a SnackBar.
         ScaffoldMessenger.of(context).showSnackBar(snackBar);
       }
+
     }
 
     return SafeArea(
