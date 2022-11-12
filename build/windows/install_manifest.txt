@@ -6,5 +6,5 @@ D:/UNEMIapp/unemi/build/windows/runner/Debug/data/flutter_assets/shaders/ink_spa
 D:/UNEMIapp/unemi/build/windows/runner/Debug/data/flutter_assets/AssetManifest.json
 D:/UNEMIapp/unemi/build/windows/runner/Debug/data/flutter_assets/FontManifest.json
 D:/UNEMIapp/unemi/build/windows/runner/Debug/data/flutter_assets/NOTICES
-D:/UNEMIapp/unemi/build/windows/runner/Debug/data/flutter_assets/kernel_blob.bin
 D:/UNEMIapp/unemi/build/windows/runner/Debug/data/flutter_assets/NOTICES.Z
+D:/UNEMIapp/unemi/build/windows/runner/Debug/data/flutter_assets/kernel_blob.bin

@@ -48,8 +48,12 @@ class LandingScreen  extends StatelessWidget {
       try {
         final resJson = jsonDecode(res.body);
         print(resJson);
-        const snackBar = SnackBar(
-          content: Text('Se subio el archivo'),
+        String strToDisplay = "";
+        resJson.forEach((element) {
+          strToDisplay += element.toString() + " ";
+        });
+        var snackBar = SnackBar(
+          content: Text(strToDisplay),
         );
 
         ScaffoldMessenger.of(context).showSnackBar(snackBar);
