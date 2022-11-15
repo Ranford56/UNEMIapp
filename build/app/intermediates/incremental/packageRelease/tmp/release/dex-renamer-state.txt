@@ -1,4 +1,4 @@
-#Thu Nov 10 19:12:34 COT 2022
+#Tue Nov 15 16:45:25 COT 2022
 base.0=D\:\\UNEMIapp\\unemi\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
